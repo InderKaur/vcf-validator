@@ -26,7 +26,7 @@ matrix:
             - libboost-log1.55-dev
             - ninja-build
 
-    # Clang 3.6
+    # Clang 4.0
     - compiler: clang
       env: C_COMPILER=clang-3.6 CXX_COMPILER=clang++-3.6
       addons:
@@ -44,7 +44,7 @@ matrix:
             - libboost-log1.55-dev
             - ninja-build
 
-    # Clang 3.7
+    # Clang 5.0
     - compiler: clang
       env: C_COMPILER=clang-3.7 CXX_COMPILER=clang++-3.7
       addons:
@@ -62,41 +62,6 @@ matrix:
             - libboost-log1.55-dev
             - ninja-build
 
-    # GCC 4.8
-    - compiler: gcc
-      env: C_COMPILER=gcc-4.8 CXX_COMPILER=g++-4.8
-      addons:
-        apt:
-          sources:
-            - boost-latest
-            - ubuntu-toolchain-r-test
-          packages:
-            - gcc-4.8
-            - g++-4.8
-            - libboost1.55-dev
-            - libboost-filesystem1.55-dev
-            - libboost-program-options1.55-dev
-            - libboost-regex1.55-dev
-            - libboost-log1.55-dev
-            - ninja-build
-
-    # GCC 4.9
-    - compiler: gcc
-      env: C_COMPILER=gcc-4.9 CXX_COMPILER=g++-4.9
-      addons:
-        apt:
-          sources:
-            - boost-latest
-            - ubuntu-toolchain-r-test
-          packages:
-            - gcc-4.9
-            - g++-4.9
-            - libboost1.55-dev
-            - libboost-filesystem1.55-dev
-            - libboost-program-options1.55-dev
-            - libboost-regex1.55-dev
-            - libboost-log1.55-dev
-            - ninja-build
 
     # GCC 5
     - compiler: gcc
